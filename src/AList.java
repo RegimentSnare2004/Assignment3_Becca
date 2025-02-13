@@ -1,13 +1,13 @@
 public class AList {
-    private Book[] arrayData;
+    private Object[] arrayData;
     private int aListSize;
 
     public AList(int maxLength){
-        arrayData = new Book[maxLength];
+        arrayData = new Object[maxLength];
         aListSize = 0;
     }
 
-    public void listAdd(Book p){
+    public void listAdd(Object p){
         if(arrayData.length == aListSize){
             resize(aListSize*2);
         }
@@ -27,13 +27,14 @@ public class AList {
     public String toString(){
         String elements = "";
         for(int i = 0; i < aListSize; i++){
-            elements += arrayData[i] + "\n";
+            elements += "Song Name: " + arrayData[i].title + ", Artist: " +
+                    arrayData[i].author + ", Price: " + arrayData[i].price + "\n";
         }
         return elements;
     }
 
     public void resize(int newSize){
-        Book[] newA = new Book[newSize];
+        Object[] newA = new Object[newSize];
 
         for(int i = 0; i < aListSize; i++){
             newA[i] = arrayData[i];
