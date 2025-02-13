@@ -1,9 +1,11 @@
 public class AList {
+
     private Object[] arrayData;
     private int aListSize;
 
+
     public AList(int maxLength){
-        arrayData = new Object[maxLength];
+        arrayData = new Song[maxLength];
         aListSize = 0;
     }
 
@@ -27,8 +29,7 @@ public class AList {
     public String toString(){
         String elements = "";
         for(int i = 0; i < aListSize; i++){
-            elements += "Song Name: " + arrayData[i].title + ", Artist: " +
-                    arrayData[i].author + ", Price: " + arrayData[i].price + "\n";
+            elements += arrayData[i].toString();
         }
         return elements;
     }

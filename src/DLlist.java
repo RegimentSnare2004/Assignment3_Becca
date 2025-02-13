@@ -1,4 +1,4 @@
-public class DLlist {
+public class DLlist<E> {
     private DLNode head;
     private DLNode tail;
 
@@ -7,7 +7,7 @@ public class DLlist {
         tail = null;
     }
 
-    public void addy(Object s){
+    public void addy(E s){
         DLNode newNode = new DLNode(s);
         if(head == null){
             head = newNode;
@@ -46,8 +46,7 @@ public class DLlist {
         String elements = "";
         DLNode current = head;
         while(current != null){
-            elements += "Song Name: " + current.data.title + ", Artist: " +
-                    current.data.author + ", Price: " + current.data.price + "\n";
+            elements += current.data.toString();
             current = current.next;
         }
         return elements;

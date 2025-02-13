@@ -1,4 +1,4 @@
-public class SLlist {
+public class SLlist<E> {
     private SNode head;
     private SNode tail;
 
@@ -7,7 +7,7 @@ public class SLlist {
         tail = null;
     }
 
-    public void addy(Object s){
+    public void addy(E s){
         SNode newNode = new SNode(s);
         if(head == null){
             head = newNode;
@@ -40,8 +40,7 @@ public class SLlist {
         String elements = "";
         SNode current = head;
         while(current != null){
-            elements += "Song Name: " + current.data.title + ", Artist: " +
-                    current.data.author + ", Price: " + current.data.price + "\n";
+            elements += current.data.toString();
             current = current.next;
         }
         return elements;

@@ -1,9 +1,9 @@
-public class DLNode {
-    public Object data;
+public class DLNode<E> {
+    public E data;
     public DLNode next;
     public DLNode previous;
 
-    public DLNode(Object s){
+    public DLNode(E s){
         data = s;
         next = null;
         previous = null;

@@ -1,8 +1,8 @@
-public class SNode {
-    public Object data;
+public class SNode<E> {
+    public E data;
     public SNode next;
 
-    public SNode(Object s){
+    public SNode(E s){
         data = s;
         next = null;
     }
