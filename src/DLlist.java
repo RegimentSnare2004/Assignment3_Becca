@@ -38,8 +38,6 @@ public class DLlist<E> {
             current.next.previous = previous;
         }
 
-
-
     }
 
     public String toString(){

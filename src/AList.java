@@ -5,7 +5,7 @@ public class AList {
 
 
     public AList(int maxLength){
-        arrayData = new Song[maxLength];
+        arrayData = new Object[maxLength];
         aListSize = 0;
     }
 

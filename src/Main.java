@@ -28,17 +28,17 @@ public class Main {
         songyList.addy(song1);
 
 
-        System.out.print("AList: " + songsList.toString() + "\n");
-        System.out.print("SLlist: " + songList.toString() + "\n");
-        System.out.print("DLlist: " + songyList.toString() + "\n");
+        System.out.print("AList: " + "\n" + songsList.toString() + "\n");
+        System.out.print("SLlist: " + "\n" + songList.toString() + "\n");
+        System.out.print("DLlist: " + "\n" + songyList.toString() + "\n");
 
         songsList.listRemove(1);
         songList.removey(1);
         songyList.removy(1);
 
-        System.out.print("AList: " + songsList.toString() + "\n");
-        System.out.print("SLlist: " + songList.toString() + "\n");
-        System.out.print("DLlist: " + songyList.toString() + "\n");
+        System.out.print("AList: " + "\n" + songsList.toString() + "\n");
+        System.out.print("SLlist: " + "\n" + songList.toString() + "\n");
+        System.out.print("DLlist: " + "\n" + songyList.toString() + "\n");
 
 
     }
